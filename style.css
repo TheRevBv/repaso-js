@@ -195,3 +195,83 @@ button:focus-visible {
   transition: all 0.5s ease 0s;
   border-radius: 8px;
 }
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 2rem;
+}
+
+/* Estilo base para el input date */
+input[type="date"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilo para cuando el input está enfocado */
+input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff; /* Cambia el color de borde cuando está enfocado */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Agrega una sombra cuando está enfocado */
+}
+
+/* Estilo para desactivar el input date */
+input[type="date"]:disabled {
+  background-color: #f2f2f2; /* Cambia el color de fondo cuando está desactivado */
+  color: #888; /* Cambia el color del texto cuando está desactivado */
+}
+
+/* Estilo para el icono de calendario (solo para algunos navegadores) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Estilo para el texto del calendario (solo para algunos navegadores) */
+input[type="date"]::-webkit-calendar-picker-indicator::after {
+  content: "\25B6"; /* Cambia el símbolo del calendario (flecha) */
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+/* Estilo para la fecha seleccionada en el calendario (solo para algunos navegadores) */
+input[type="date"]::-webkit-datetime-edit {
+  padding: 5px;
+  border: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.col-6 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-text {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

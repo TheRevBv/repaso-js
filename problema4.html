@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ejercicio 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <script src="main.js"></script> -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <div class="card-content">
+            <h5 class="card-title">Ejercicio 4</h5>
+            <p class="card-text">
+              Diseñar una aplicación en JavaScript que realice una petición al
+              sitio web JSON Placeholder para recuperar los datos de 10 usuarios
+              <a href="https://jsonplaceholder.typicode.com/users"
+                >(https://jsonplaceholder.typicode.com/users)</a
+              >
+              , una vez recibidos los datos la aplicación deberá de permitir
+              realizar las siguientes acciones: 1. Desplegar la lista de
+              usuarios mostrando solo: • id • name • username • email 2. Buscar
+              a un usuario por medio de su username, y mostrar los mismos datos.
+            </p>
+            <a class="btn btn-primary" href="index.html">Volver</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-group">
+          <input
+            type="text"
+            id="username"
+            placeholder="Ingrese el username"
+            class="input-text"
+          />
+          <button id="btnBuscar" class="btn btn-primary mt-3">Buscar</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h2>Lista de usuarios</h2>
+          <div id="app"></div>
+        </div>
+        <div class="col-6">
+          <h2>Resultado de la búsqueda</h2>
+          <div id="busqueda"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/controllers/problema4.js"></script>
+  </body>
+</html>
